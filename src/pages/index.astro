@@ -1,38 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-// TODO: 替换下面的示例文字
-const highlights = [
-  { title: '亮点 1', text: '一句话介绍你的第一个亮点，例如擅长的方向。' },
-  { title: '亮点 2', text: '一句话介绍你的第二个亮点，例如做过的项目类型。' },
-  { title: '亮点 3', text: '一句话介绍你的第三个亮点，例如正在学习或关注的领域。' },
-];
 ---
 
-<Layout title="ITNRI 的个人主页" description="ITNRI 的个人主页：介绍、项目与联系方式。">
-  <section>
-    <!-- TODO: 替换大标题和一句话介绍 -->
-    <h1 class="text-4xl font-bold leading-tight sm:text-5xl">你好，我是 ITNRI</h1>
-    <p class="mt-4 text-lg text-neutral-600 dark:text-neutral-400">
-      一句话定位：例如“机械工程学生，喜欢动手做东西，正在搭建自己的网站。”
-    </p>
-    <div class="mt-6 flex gap-4">
-      <a href="/projects" class="rounded-full bg-neutral-900 px-5 py-2 text-sm text-white no-underline dark:bg-white dark:text-neutral-900">看看我的项目</a>
-      <a href="/contact" class="rounded-full border border-neutral-300 px-5 py-2 text-sm no-underline dark:border-neutral-700">联系我</a>
-    </div>
-  </section>
-
-  <section class="mt-14">
-    <h2 class="text-2xl font-bold">亮点</h2>
-    <div class="mt-5 grid gap-4 sm:grid-cols-3">
-      {
-        highlights.map((item) => (
-          <article class="rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800">
-            <h3 class="font-bold">{item.title}</h3>
-            <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">{item.text}</p>
-          </article>
-        ))
-      }
-    </div>
-  </section>
+<Layout title="ITNRI — Website Under Construction">
+  <img src="/itnri-logo.png" alt="ITNRI logo" class="h-28 w-28 rounded-full object-cover" />
+  <h1 class="mt-8 text-3xl font-bold leading-tight sm:text-4xl">
+    International Translational Neuroscience Research Institute
+  </h1>
+  <p class="mt-3 text-neutral-500">ITNRI · Zhejiang Chinese Medical University</p>
+  <p class="mt-8 text-xl text-neutral-700 dark:text-neutral-300">Website under construction.</p>
+  <p class="mt-3 text-neutral-600 dark:text-neutral-400">Coming soon — please check back later.</p>
 </Layout>

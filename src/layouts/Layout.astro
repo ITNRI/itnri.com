@@ -4,40 +4,26 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'ITNRI 的个人主页' } = Astro.props;
+const { title, description = 'International Translational Neuroscience Research Institute (ITNRI)' } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/itnri-logo.png" />
     <title>{title}</title>
   </head>
   <body>
-    <header class="border-b border-neutral-200 dark:border-neutral-800">
-      <div class="mx-auto flex max-w-3xl items-center justify-between px-5 py-4">
-        <!-- TODO: 替换为你的网站名称 -->
-        <a href="/" class="text-lg font-bold no-underline">ITNRI</a>
-        <nav class="flex gap-5 text-sm">
-          <a href="/" class="no-underline hover:underline">首页</a>
-          <a href="/about" class="no-underline hover:underline">关于我</a>
-          <a href="/projects" class="no-underline hover:underline">项目</a>
-          <a href="/contact" class="no-underline hover:underline">联系方式</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="mx-auto max-w-3xl px-5 py-10">
+    <main class="mx-auto flex min-h-screen max-w-3xl flex-col items-center justify-center px-5 py-10 text-center">
       <slot />
     </main>
-
     <footer class="border-t border-neutral-200 dark:border-neutral-800">
-      <div class="mx-auto max-w-3xl px-5 py-6 text-sm text-neutral-500">
-        <!-- TODO: 替换页脚文字 -->
-        <p>© 2026 ITNRI · 用 Astro + Vercel 搭建</p>
+      <div class="mx-auto max-w-3xl px-5 py-6 text-center text-sm text-neutral-500">
+        <p>© 2026 International Translational Neuroscience Research Institute (ITNRI)</p>
+        <p>Zhejiang Chinese Medical University, Hangzhou, China</p>
       </div>
     </footer>
   </body>
