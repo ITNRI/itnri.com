@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// TODO: 替换下面的示例文字和时间线
+const timeline = [
+  { year: '2026', text: '开始搭建自己的个人网站（itnri.com），跑通域名 + GitHub + Vercel 的上线流程。' },
+  { year: '2025', text: '示例事件：写一句话，说明这一年做了什么。' },
+  { year: '2024', text: '示例事件：写一句话，说明这一年做了什么。' },
+];
+---
+
+<Layout title="关于我 · ITNRI" description="关于 ITNRI 的介绍和经历时间线。">
+  <h1 class="text-3xl font-bold">关于我</h1>
+  <!-- TODO: 替换为 2–3 段你自己的简介 -->
+  <p class="mt-5 leading-relaxed text-neutral-700 dark:text-neutral-300">
+    这里是第一段个人简介：你是谁、在做什么、对什么感兴趣，一两句话说清楚就行。
+  </p>
+  <p class="mt-4 leading-relaxed text-neutral-700 dark:text-neutral-300">
+    这里是第二段个人简介：可以写你正在做的事，或者这个网站是用来干嘛的。
+  </p>
+
+  <h2 class="mt-12 text-2xl font-bold">经历时间线</h2>
+  <ol class="mt-5 space-y-4 border-l border-neutral-200 pl-5 dark:border-neutral-800">
+    {
+      timeline.map((item) => (
+        <li>
+          <p class="text-sm font-bold">{item.year}</p>
+          <p class="mt-1 text-neutral-700 dark:text-neutral-300">{item.text}</p>
+        </li>
+      ))
+    }
+  </ol>
+</Layout>
