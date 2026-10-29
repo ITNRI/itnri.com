@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const projects = [
+  { title: 'Project 1' },
+  { title: 'Project 2' },
+];
+---
+
+<Layout title="Research · ITNRI" description="Research projects at ITNRI.">
+  <h1 class="text-3xl font-bold">Research</h1>
+
+  <div class="mt-8 space-y-4">
+    {
+      projects.map((project) => (
+        <article class="rounded-2xl border border-neutral-200 p-6 dark:border-neutral-800">
+          <h2 class="text-lg font-bold">{project.title}</h2>
+          <!-- TODO: Add the project description when confirmed. -->
+          <p class="mt-2 text-sm text-neutral-500">Description to be added.</p>
+        </article>
+      ))
+    }
+  </div>
+</Layout>

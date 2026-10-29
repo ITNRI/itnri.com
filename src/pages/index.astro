@@ -2,12 +2,55 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="ITNRI — Website Under Construction">
-  <img src="/itnri-logo.png" alt="ITNRI logo" class="h-28 w-28 rounded-full object-cover" />
-  <h1 class="mt-8 text-3xl font-bold leading-tight sm:text-4xl">
-    International Translational Neuroscience Research Institute
-  </h1>
-  <p class="mt-3 text-neutral-500">ITNRI · Zhejiang Chinese Medical University</p>
-  <p class="mt-8 text-xl text-neutral-700 dark:text-neutral-300">Website under construction.</p>
-  <p class="mt-3 text-neutral-600 dark:text-neutral-400">Coming soon — please check back later.</p>
+<Layout title="ITNRI — International Translational Neuroscience Research Institute">
+  <section class="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
+    <img src="/itnri-logo.png" alt="ITNRI logo" class="h-28 w-28 rounded-full object-cover" />
+    <div>
+      <h1 class="text-3xl font-bold leading-tight sm:text-4xl">
+        International Translational Neuroscience Research Institute
+      </h1>
+      <p class="mt-3 text-lg text-neutral-600 dark:text-neutral-400">
+        Translational neuroscience at Zhejiang Chinese Medical University, Hangzhou, China —
+        from astrocyte biology and gliotransmission to new approaches in brain science.
+      </p>
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <h2 class="text-2xl font-bold">About ITNRI</h2>
+    <p class="mt-4 leading-relaxed text-neutral-700 dark:text-neutral-300">
+      The International Translational Neuroscience Research Institute (ITNRI) is based at
+      Zhejiang Chinese Medical University (ZCMU) in Hangzhou, China. It is directed by
+      Distinguished Professor Vladimir Parpura, and its work centres on how astrocytes
+      communicate with neurons — and how that biology can be translated toward a better
+      understanding of brain function in health and disease.
+    </p>
+    <p class="mt-4">
+      <a href="/institute">Read the institute introduction →</a>
+    </p>
+  </section>
+
+  <section class="mt-12 grid gap-4 sm:grid-cols-3">
+    <article class="rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800">
+      <h3 class="font-bold">People</h3>
+      <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        2 principal investigators and 4 postdoctoral researchers.
+      </p>
+      <a href="/people" class="mt-3 inline-block text-sm">Meet the team →</a>
+    </article>
+    <article class="rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800">
+      <h3 class="font-bold">Research</h3>
+      <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        Project 1 · Project 2
+      </p>
+      <a href="/research" class="mt-3 inline-block text-sm">Research projects →</a>
+    </article>
+    <article class="rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800">
+      <h3 class="font-bold">Partners</h3>
+      <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        Hosted by Zhejiang Chinese Medical University.
+      </p>
+      <a href="/partners" class="mt-3 inline-block text-sm">Partners →</a>
+    </article>
+  </section>
 </Layout>

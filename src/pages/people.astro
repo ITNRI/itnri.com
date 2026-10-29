@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const postdocs = [
+  'Gretsen Velezmoro Jáuregui',
+  'Nikita Arnst',
+  'Raphaël Bodin',
+  'Chariklea Peta',
+];
+---
+
+<Layout title="People · ITNRI" description="Principal investigators and postdoctoral researchers at ITNRI.">
+  <h1 class="text-3xl font-bold">People</h1>
+
+  <h2 class="mt-10 text-2xl font-bold">Principal Investigators</h2>
+
+  <article class="mt-6 rounded-2xl border border-neutral-200 p-6 dark:border-neutral-800">
+    <h3 class="text-xl font-bold">Vladimir Parpura, MD, PhD</h3>
+    <p class="mt-1 text-sm font-semibold text-neutral-500">
+      Distinguished Professor and Director, ITNRI · MAE, MSASA, FAAS, FAPS
+    </p>
+    <p class="mt-4 leading-relaxed text-neutral-700 dark:text-neutral-300">
+      Vladimir Parpura holds a medical degree from the University of Zagreb, Croatia (1989)
+      and a doctorate in Neuroscience and Zoology from Iowa State University (1993). He has
+      held faculty appointments at Iowa State University, the University of California
+      Riverside, the University of Rijeka, Croatia, and the University of Alabama at
+      Birmingham, USA. He is presently Distinguished Professor and Director of ITNRI at
+      Zhejiang Chinese Medical University, Hangzhou, China, and a Cheung Kong Scholar and
+      Kun Peng Action Expert.
+    </p>
+    <p class="mt-4 leading-relaxed text-neutral-700 dark:text-neutral-300">
+      He discovered the astrocyte–neuron glutamate-mediated signalling pathway — gliotransmission —
+      which led to the concept of the tripartite synapse. Gliotransmission has since proven
+      important for sleep, respiration, learning, memory, gut motility and secretion. Since
+      2021 he has ranked number 2 in the world in astrocyte expertise (expertscape.com).
+      Based on Google Scholar, his H-index is 82, with over 32,000 citations (as given in his CV).
+    </p>
+    <p class="mt-4 text-sm">
+      <a href="https://scholar.google.com/citations?hl=en&user=ekvKLtMAAAAJ">Google Scholar profile →</a>
+      <span class="mx-2 text-neutral-400">·</span>
+      <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Parpura+V">Publications on PubMed →</a>
+    </p>
+    <p class="mt-2 text-sm text-neutral-500">
+      Honours include membership of Academia Europaea (2012), the Dana Alliance for Brain
+      Initiatives (2016), the Slovenian Academy of Sciences and Arts (2017), Fellowship of
+      the American Association for the Advancement of Science (2017) and Fellowship of the
+      American Physiological Society (2020), and the 2025 Mayo Clinic Distinguished Alumnus Award.
+    </p>
+  </article>
+
+  <article class="mt-6 rounded-2xl border border-neutral-200 p-6 dark:border-neutral-800">
+    <h3 class="text-xl font-bold">Vedrana Montana Parpura</h3>
+    <p class="mt-1 text-sm font-semibold text-neutral-500">Principal Investigator, ITNRI</p>
+    <p class="mt-4 text-neutral-500">Biography to be added.</p>
+  </article>
+
+  <h2 class="mt-12 text-2xl font-bold">Postdoctoral Researchers</h2>
+  <p class="mt-3 text-neutral-600 dark:text-neutral-400">
+    Four postdoctoral researchers. Biographies to be added.
+  </p>
+  <div class="mt-6 grid gap-4 sm:grid-cols-2">
+    {
+      postdocs.map((name) => (
+        <article class="rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800">
+          <h3 class="font-bold">{name}</h3>
+          <p class="mt-1 text-sm text-neutral-500">Postdoctoral Researcher, ITNRI</p>
+          <p class="mt-3 text-sm text-neutral-500">Biography to be added.</p>
+        </article>
+      ))
+    }
+  </div>
+</Layout>
